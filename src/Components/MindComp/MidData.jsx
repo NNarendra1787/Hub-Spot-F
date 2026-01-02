@@ -5,7 +5,7 @@ function MidData() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    let url = "https://hub-spot-backend-link-ngd8q9qd1-nnarendra1787s-projects.vercel.app/data/dataCheck";
+    let url = "https://new-hubspot-backendserver.onrender.com/data/dataCheck";
     axios.get(url).then((res) => {
       setData(res.data.Result);
       console.log(res.data);
