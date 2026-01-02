@@ -45,7 +45,7 @@ function RegisterPage() {
   };
 
   const RegisterUser = async (clientData) => {
-    const url = "https://hub-spot-backend-link-ngd8q9qd1-nnarendra1787s-projects.vercel.app/data/register";
+    const url = "https://new-hubspot-backendserver.onrender.com/data/register";
     const response = await axios.post(url, clientData);
     setReponseData(response.data);
 
