@@ -11,7 +11,7 @@ function Chart() {
   var [data, setData] = useState([]);
 
   useEffect(() => {
-    const url = "https://hub-spot-backend-link-ngd8q9qd1-nnarendra1787s-projects.vercel.app/data/dataCheck";
+    const url = "https://new-hubspot-backendserver.onrender.com/data/dataCheck";
     axios.get(url).then((res) => {
       setData(res.data);
       console.log(res.data);
